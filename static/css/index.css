@@ -1,5 +1,5 @@
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Palatino Linotype";
 }
 
 
@@ -17,6 +17,18 @@ body {
   font-variant: small-caps;
 }
 
+.image-caption {
+    text-align: justify;
+    font-style: italic;
+    font-size: 0.8em;
+    margin-top: 5px;
+    /* margin-bottom: px; */
+    /* display: inline-block; */
+    /* width: 700px; */
+    /* /* margin-left: 60px; */
+    /* margin-right: 10px;  */
+  }
+
 
 .teaser .hero-body {
   padding-top: 0;
@@ -24,11 +36,17 @@ body {
 }
 
 .teaser {
-  font-family: 'Google Sans', sans-serif;
+  font-family: "Palatino Linotype";
 }
 
 
 .publication-title {
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 50%; */
 }
 
 .publication-banner {
@@ -48,11 +66,11 @@ body {
 }
 
 .publication-title {
-    font-family: 'Google Sans', sans-serif;
+    font-family: "Palatino Linotype";
 }
 
 .publication-authors {
-    font-family: 'Google Sans', sans-serif;
+    font-family: "Palatino Linotype";
 }
 
 .publication-venue {
@@ -155,3 +173,10 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.image-spacing { 
+  margin-right: 10px; 
+  margin-top: 60px; 
+  /* margin-bottom: 30px; */
+  display: inline-block;
+} 
