@@ -100,7 +100,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2011.12948"
+                <a href="https://arxiv.org/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -109,7 +109,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2011.12948"
+                <a href="https://arxiv.org/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -119,7 +119,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                <a href="https://www.youtube.com/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -129,7 +129,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/google/nerfies"
+                <a href="https://github.com/PyNoetic/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -169,38 +169,32 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
-          </p>
-          <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Neurotechnologies, notably Brain Computer Interfaces (BCIs), have gained significant attention in recent years, 
+            due to their potential to revolutionize several domains, ranging from gaming, entertainment and robotics to medicine 
+            and rehabilitation. Nevertheless, a fundamental challenge in the rapid development of BCI systems is the absence of 
+            comprehensive software solutions specifically tailored for advancing cognitive neuroscience experiments. Existing BCI 
+            softwares suffer from critical limitations, including a lack of "stage-wise" flexibility crucial for experimental 
+            research, elevated costs stemming from reliance on proprietary software, and an absence of all-inclusive features leading
+            to reliance on multiple softwares. This work introduces PyNoetic, an end-to-end python software that 
+            not only addresses these inherent limitations but also offers an extensive selection of methods, coupled with user-friendly
+            compatibility for integrating novel algorithms at each developmental phase of a BCI system. PyNoetic offers a 
+            comprehensive suite of functions ranging from: stimuli presentation, data acquisition, channel selection techniques, 
+            filters, multiple feature extraction techniques, artifact removal, a wide array of analytical tools, brain-connectivity
+            measures, machine learning (ML) classification models, data visualization, systematic testing via simulation, and evaluation 
+            of novel paradigms. To provide flexibility for research, the option to add custom functionality through scripting is 
+            provided for experienced users. PyNoetic exhibits versatility and suitability for both offline and real-time 
+            deployment of BCI systems. Adhering to stringent software development protocols, PyNoetic has been optimized 
+            with a pronounced emphasis on flexibility, modularity and scalability. PyNoetic caters to both experienced 
+            programmers and those new to Python, expediting the experiment design process. This empowers researchers to 
+            concentrate on the intricate facets of BCI development, thus accelerating future research endeavors. PyNoetic 
+            is made freely available open-source under GNU General Public License for non-commercial use.
           </p>
         </div>
       </div>
     </div>
     <!--/ Abstract. -->
 
-    <!-- Paper video. -->
+    <!-- Paper video.
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
@@ -210,7 +204,7 @@
         </div>
       </div>
     </div>
-    <!--/ Paper video. -->
+   Paper video. -->
   </div>
 </section>
 
@@ -220,43 +214,7 @@
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
+    <!-- Animation.
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Animation</h2>
@@ -284,10 +242,10 @@
 
       </div>
     </div>
-    <!--/ Animation. -->
+    Animation. -->
 
 
-    <!-- Concurrent Work. -->
+    <!-- Concurrent Work.
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Related Links</h2>
@@ -312,7 +270,7 @@
         </div>
       </div>
     </div>
-    <!--/ Concurrent Work. -->
+    Concurrent Work. -->
 
   </div>
 </section>
@@ -335,10 +293,10 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+         href="./static/videos/PyNoetic_preprint.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/PyNoetic/" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
