@@ -6,7 +6,7 @@
         content="PyNoetic: a Modular Python Framework for No Code Development of EEG Brain-Computer Interfaces.">
   <meta name="keywords" content="PyNoetic, BCI, Neural-Systems">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PyNoetic: a Modular Python Framework for No Code Development of EEG Brain-Computer Interfaces</title>
+  <title>PyNoetic: A Modular Python Framework for No-Code Development of EEG Brain-Computer Interfaces</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -101,16 +101,15 @@
             <span class="author-block"><sup>2</sup>Carnegie Mellon University,</span>&nbsp;
             <span class="author-block"><sup>3</sup>TU Dublin Ireland</span>
             <br>
-<!-- 		<span class="brmod" style="font-family: Arial, sans-serif;">under review at</span> -->
             <br>
-            <span><b style="color:rgb(255, 100, 100);">Coming Soon!</b></span>
+            <span><b style="color:rgb(255, 100, 100);">PLoS One</b></span>
           </div>
           
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/"
+                <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0327791"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -119,7 +118,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/"
+                <a href="https://www.arxiv.org/abs/2509.00670/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -129,7 +128,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/"
+                <a href="https://www.youtube.com/playlist?list=PLO-Klip3blfPwOVWhHhAdvJkYcf7TKsbu"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -139,7 +138,7 @@
               </span>
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/PyNoetic/"
+                <a href="https://github.com/NeuroDiag/PyNoetic-official"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -163,9 +162,6 @@
         <source src="./static/videos/teaser.mp4"
                 type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        (To Be Released Soon)
-      </h2>
     </div>
   </div>
 </section>
@@ -179,21 +175,27 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Brain-Computer Interfaces (BCIs), have emerged as a transformative technology with applications spanning virtual reality (VR), robotics, entertainment, medicine and rehabilitation. 
-            However, existing BCI toolboxes/ frameworks suffer from critical limitations, including a lack of "stage-wise" flexibility crucial for experimental research, elevated costs stemming
-	    from reliance on proprietary software (SW), and a lack of all-inclusive features leading to reliance on multiple external tools, affecting research outcomes. 
-            To address these limitations, we present PyNoetic, an end-to-end comprehensive Python framework designed to address the diverse needs of BCI research. 
-	    PyNoetic offers a wide range of functionality, including stimuli presentation, data acquisition, channel selection, filtering, feature extraction and artifact removal. 
-	    Moreover, it encompasses a rich array of analytical tools including, brain-connectivity measures, machine learning (ML) models, data visualization methods, systematic 
-            testing functionalities via simulation, and evaluation methods of novel paradigms. For experienced users, PyNoetic facilitates the integration of custom functionality 
-	    and novel algorithms at each stage of BCI system development, with minimal lines of code, ensuring adaptability and innovation. One of PyNoetic's key strengths lies in its 
-	    versatility for both offline analysis and real-time BCI development. By catering to both programmers and non-programmers alike, it streamlines the experiment design process, 
-	    enabling researchers to focus on more intricate facets of BCI development, and accelerating research endeavors.
+            Electroencephalography (EEG)-based Brain-Computer Interfaces (BCIs) have emerged as a transformative technology 
+			  with applications spanning robotics, virtual reality, medicine, and rehabilitation. However, existing BCI 
+			  frameworks face several limitations, including a lack of stage-wise flexibility essential for experimental 
+			  research, steep learning curves for researchers without programming expertise, elevated costs due to reliance 
+			  on proprietary software, and a lack of all-inclusive features leading to the use of multiple external tools 
+			  affecting research outcomes. To address these challenges, we present PyNoetic, a modular BCI framework designed 
+			  to cater to the diverse needs of BCI research. PyNoetic is one of the very few frameworks in Python that 
+			  encompasses the entire BCI design pipeline, from stimulus presentation and data acquisition to channel selection, 
+			  filtering, feature extraction, artifact removal, and finally simulation and visualization. Notably, PyNoetic 
+			  introduces an intuitive and end-to-end GUI coupled with a unique pick-and-place configurable flowchart for no-code 
+			  BCI design, making it accessible to researchers with minimal programming experience. For advanced users, it 
+			  facilitates the seamless integration of custom functionalities and novel algorithms with minimal coding, 
+			  ensuring adaptability at each design stage. PyNoetic also includes a rich array of analytical tools such 
+			  as machine learning models, brain-connectivity indices, systematic testing functionalities via simulation, 
+			  and evaluation methods of novel paradigms. PyNoetic’s strengths lie in its versatility for both offline 
+			  and real-time BCI development, which streamlines the design process, allowing researchers to focus on 
+			  more intricate aspects of BCI development and thus accelerate their research endeavors.
           </p>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
 
     <!-- Paper video.
     <div class="columns is-centered has-text-centered">
@@ -210,80 +212,20 @@
 </section>
 
 
-<section class="section">
-  <div class="container is-max-desktop">
-
-    <div class="columns is-centered">
-
-    <!-- Animation.
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Animation</h2>
-
-        <h3 class="title is-4">Re-rendering the input video</h3>
-        <div class="content has-text-justified">
-          <p>
-            Using <span class="dnerf">Nerfies</span>, you can re-render a video from a novel
-            viewpoint such as a stabilized camera by playing back the training deformations.
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      
-      </div>
-    </div>
-    Animation. -->
-
-
-    <!-- Concurrent Work.
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    Concurrent Work. -->
-
-  </div>
-</section>
-
-
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{singh2023pynoetic,
-  author    = {Singh, Gursimran and Chharia, Aviral and Upadhyay, Rahul and Kumar, Vinay and Longo, Luca},
-  title     = {PyNoetic: Towards No Code Development of Brain-Computer Interfaces},
-  journal   = {Under Review},
-  year      = {2024},
-}</code></pre>
+    <pre><code>@article{singh2025pynoetic,
+			  title={PyNoetic: A modular python framework for no-code development of EEG brain-computer interfaces},
+			  author={Singh, Gursimran and Chharia, Aviral and Upadhyay, Rahul and Kumar, Vinay and Longo, Luca},
+			  journal={PLoS One},
+			  volume={20},
+			  number={8},
+			  pages={e0327791},
+			  year={2025},
+			  publisher={Public Library of Science San Francisco, CA USA}
+  			}
+	</code></pre>
   </div>
 </section>
 
@@ -292,10 +234,10 @@
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/PyNoetic_preprint.pdf">
+         href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0327791">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/PyNoetic/" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/NeuroDiag/PyNoetic-official" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -303,8 +245,7 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>. The website template is from the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.
           </p>
         </div>
